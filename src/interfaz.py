@@ -37,14 +37,14 @@ def generar_contraseña():
         contraseña = gencontraseña(int(longitud_str), caracteres)
 
         # Análisis de seguridad
-        fortaleza, color = evaluar_seguridad(contraseña)
+        seguridad, color = evaluar_seguridad(contraseña)
 
         # PRIMERO: Mostrar contraseña y análisis en pantalla
         entry_resultado.config(state="normal")
         entry_resultado.delete(0, tk.END)
         entry_resultado.insert(0, contraseña)
         entry_resultado.config(state="readonly")
-        label_fortaleza.config(text=f"Fortaleza: {fortaleza}", fg=color)
+        label_seguridad.config(text=f"Seguridad: {seguridad}", fg=color)
 
         # Actualizar la ventana para que se vea la contraseña
         ventana.update()
@@ -65,7 +65,7 @@ def generar_contraseña():
             entry_resultado.config(state="normal")
             entry_resultado.delete(0, tk.END)
             entry_resultado.config(state="readonly")
-            label_fortaleza.config(text="")
+            label_seguridad.config(text="")
             # Resetea los checkboxes a valores por defecto
             var_mayusculas.set(True)
             var_numeros.set(True)
@@ -148,9 +148,9 @@ entry_resultado = tk.Entry(resultado, font=("Monaco", 14, "bold"), justify="cent
                            state="readonly", bg="white", fg="white", relief=tk.RIDGE, bd=2)
 entry_resultado.pack(pady=15, padx=10, fill=tk.X)
 
-# Label de fortaleza
-label_fortaleza = tk.Label(resultado, text="", font=("Monaco", 12, "bold"), bg="white")
-label_fortaleza.pack(pady=(0, 10))
+# Label de seguridad
+label_seguridad = tk.Label(resultado, text="", font=("Monaco", 12, "bold"), bg="white")
+label_seguridad.pack(pady=(0, 10))
 
 # Iniciar la aplicación
 if __name__ == "__main__":
