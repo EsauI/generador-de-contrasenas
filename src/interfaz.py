@@ -39,7 +39,7 @@ def generar_contraseña():
         # Análisis de seguridad
         seguridad, color = evaluar_seguridad(contraseña)
 
-        # PRIMERO: Mostrar contraseña y análisis en pantalla
+        # Mostrar contraseña y análisis en pantalla
         entry_resultado.config(state="normal")
         entry_resultado.delete(0, tk.END)
         entry_resultado.insert(0, contraseña)
@@ -77,7 +77,7 @@ def generar_contraseña():
 # Configurar ventana principal
 ventana = tk.Tk()
 ventana.title("Generador de Contraseñas")
-ventana.geometry("400x555")
+ventana.geometry("400x650")
 ventana.configure(bg="white")
 ventana.resizable(False, False)
 
