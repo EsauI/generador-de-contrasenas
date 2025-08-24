@@ -2,7 +2,7 @@
 
 ---
 
-## **DATOS DEL PROYECTO**
+## **Datos del Proyecto**
 
 - **Nombre del Proyecto:** El impacto de las nuevas tecnologías en la sociedad: visualización del futuro.
 - **Proyecto:** Generador de Contraseñas
@@ -10,7 +10,7 @@
 
 ---
 
-## **OBJETIVO DEL PROGRAMA**
+## **Objetico del Programa**
 
 Desarrollar una aplicación que genere contraseñas seguras y aleatorias, evaluando su nivel de seguridad. El objetivo es demostrar como se puede mejorar la seguridad digital y proteger la información confidencial de los usuarios.
 
